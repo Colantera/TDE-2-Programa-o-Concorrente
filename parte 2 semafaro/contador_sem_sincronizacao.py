@@ -6,6 +6,7 @@ contador = 0
 def contar():
     global contador
 
+    # vai rodar 200.000 vezes
     for i in range(200000):
         valor = contador
         time.sleep(0)
@@ -17,6 +18,7 @@ for teste in range(3):
 
     inicio = time.time()
 
+    # rodas as 8 threads
     for i in range(8):
         t = threading.Thread(target=contar)
         threads.append(t)
