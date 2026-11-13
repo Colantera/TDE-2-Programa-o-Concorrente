@@ -92,13 +92,13 @@ Versão ingênua:
 
 Na execução, todos os filósofos conseguem pegar o primeiro garfo, mas ficam esperando o segundo. O programa identifica o deadlock.
 
-![alt text](parte-1-filosofos\logs\versao-ingenua-parte1.png)
+![Execução da versão ingênua](logs/versao-ingenua-parte1.png)
 
 **Versão corrigida:**
 
 Na segunda versão, os filósofos conseguem pegar os garfos, comer e terminar seus ciclos sem deadlock.
 
-![alt text](parte-1-filosofos\logs\versao-solucao-parte1.png)
+![Execução da versão corrigida](logs/versao-solucao-parte1.png)
 
 ## Conclusão
 
