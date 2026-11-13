@@ -1,5 +1,7 @@
 # Parte 2: Threads e Semáforos
 
+Feito Por: Pedro Henrique J Colantonio
+
 ## Descrição do problema
 
 O desafio envolve 8 threads tentando atualizar o mesmo contador simultaneamente.
