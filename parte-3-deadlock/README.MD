@@ -99,6 +99,8 @@ O projeto foi desenvolvido em Python, utilizando a biblioteca threading e, na ve
 
 Para executar, abra o terminal na pasta parte-3-deadlock.
 
+cd parte-3-deadlock
+
 Versão com trava:
 
 python deadlock_reproducao.py
@@ -111,14 +113,23 @@ python deadlock_solucao.py
 
 Versão com trava:
 
+
+![Aquisição dos Locks](logs/deadlock_reproducao1.png)
+*nesta primeira execução consegue-se observar que as threads aqduirem locks diferentes e tentam acessar os recursos uma pela outra
+
 Durante a execução, cada thread adquire um Lock diferente e tenta adquirir o segundo. Como os recursos estão sendo utilizados uma pela outra, as duas ficam bloqueadas. Após o tempo limite, o programa identifica e exibe a mensagem de deadlock detectado.
 
-
+*em seguida as duas threads ficam aguardando os recursos restantes, causando o deadlock
+![Deadlock detectado](logs/deadlock_reproducao2.png)
 
 Versão com solução:
 
+
 Na segunda versão, as duas threads seguem a mesma ordem de aquisição dos Locks. Assim, conseguem executar suas tarefas, liberar os recursos e finalizar sem deadlock.
 
+
+*já nessa execução, as threads seguem uma ordem de aquisição de locks e finalizam sem deadlock
+![Execução da versão corrigida](logs/deadlock_solucao.png)
 
 
 ## Conclusão
