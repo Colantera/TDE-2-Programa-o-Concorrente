@@ -92,39 +92,13 @@ Cada programa realiza 3 execuções e mostra o valor esperado, o valor obtido e 
 
 **Versão sem sincronização:**
 
-Teste: 1
-Esperado: 1600000
-Obtido: 200543
-Tempo: 5.55 segundos
-
-Teste: 2
-Esperado: 1600000
-Obtido: 200316
-Tempo: 5.63 segundos
-
-Teste: 3
-Esperado: 1600000
-Obtido: 200226
-Tempo: 5.25 segundos
+(logs/Sem-Semafaro.png)
 
 Na primeira versão, nenhuma das execuções chegou ao valor esperado. Isso aconteceu porque várias threads acessaram o contador sem sincronização, fazendo com que incrementos fossem perdidos.
 
 **Versão com semáforo:**
 
-Teste: 1
-Esperado: 1600000
-Obtido: 1600000
-Tempo: 7.82 segundos
-
-Teste: 2
-Esperado: 1600000
-Obtido: 1600000
-Tempo: 7.86 segundos
-
-Teste: 3
-Esperado: 1600000
-Obtido: 1600000
-Tempo: 8.14 segundos
+(logs/Com-Semafaro.png)
 
 Na segunda versão, todas as execuções chegaram ao valor esperado de 1.600.000. Isso mostra que o semáforo conseguiu controlar o acesso ao contador e evitar a perda de incrementos.
 
