@@ -46,4 +46,4 @@ t1.join(timeout=2)
 t2.join(timeout=2)
 
 if t1.is_alive() and t2.is_alive():
-    print("Deadlock encontrado")
+    print("aviso deeadlock")
