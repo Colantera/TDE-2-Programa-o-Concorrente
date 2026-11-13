@@ -90,15 +90,11 @@ Cada programa realiza 3 execuções e mostra o valor esperado, o valor obtido e 
 
 ## Resultados
 
-**Versão sem sincronização:**
-
-(logs/Sem-Semafaro.png)
+![Resultado sem semáforo](parte-2-semafaro/logs/sem_semaforo.png)
 
 Na primeira versão, nenhuma das execuções chegou ao valor esperado. Isso aconteceu porque várias threads acessaram o contador sem sincronização, fazendo com que incrementos fossem perdidos.
 
-**Versão com semáforo:**
-
-(logs/Com-Semafaro.png)
+![Resultado com semáforo](parte-2-semafaro/logs/com_semaforo.png)
 
 Na segunda versão, todas as execuções chegaram ao valor esperado de 1.600.000. Isso mostra que o semáforo conseguiu controlar o acesso ao contador e evitar a perda de incrementos.
 
