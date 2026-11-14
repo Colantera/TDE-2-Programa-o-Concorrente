@@ -76,25 +76,25 @@ Para executar, abra o terminal na pasta do projeto e de **cd "parte 2 semafaro"*
 
 **Versão sem sincronização:**
 
-```bash
+
 python contador_sem_sincronizacao.py
-```
+
 
 **Versão com semáforo:**
 
-```bash
+
 python contador_com_semaforo.py
-```
+
 
 Cada programa realiza 3 execuções e mostra o valor esperado, o valor obtido e o tempo gasto.
 
 ## Resultados
 
-![Resultado sem semáforo](logs/Sem-Semaforo.png)
+![Resultado Sem semaforo](image.png)
 
 Na primeira versão, nenhuma das execuções chegou ao valor esperado. Isso aconteceu porque várias threads acessaram o contador sem sincronização, fazendo com que incrementos fossem perdidos.
 
-![Resultado com semáforo](logs/Com-Semaforo.png)
+![Resultado Com semafoto](image-1.png)
 
 Na segunda versão, todas as execuções chegaram ao valor esperado de 1.600.000. Isso mostra que o semáforo conseguiu controlar o acesso ao contador e evitar a perda de incrementos.
 

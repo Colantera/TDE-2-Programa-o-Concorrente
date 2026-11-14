@@ -113,12 +113,15 @@ Versão com trava:
 
 Durante a execução, cada thread adquire um Lock diferente e tenta adquirir o segundo. Como os recursos estão sendo utilizados uma pela outra, as duas ficam bloqueadas. Após o tempo limite, o programa identifica e exibe a mensagem de deadlock detectado.
 
+![Com deadlock](image.png)
+
 
 
 Versão com solução:
 
 Na segunda versão, as duas threads seguem a mesma ordem de aquisição dos Locks. Assim, conseguem executar suas tarefas, liberar os recursos e finalizar sem deadlock.
 
+![Sem deadlock](image-1.png)
 
 
 ## Conclusão
